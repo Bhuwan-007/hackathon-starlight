@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="#3b82f6" opacity="0.9">
+  <!-- Outer Ring -->
+  <circle cx="256" cy="256" r="230" fill="none" stroke="#60a5fa" stroke-width="20" />
+  <!-- Inner Ring -->
+  <circle cx="256" cy="256" r="190" fill="none" stroke="#60a5fa" stroke-width="10" stroke-dasharray="10 10" />
+  <!-- Center Star/Core -->
+  <polygon points="256,90 290,200 400,200 310,265 345,380 256,310 167,380 202,265 112,200 222,200" fill="#bfdbfe" />
+  <!-- Decorative Lines -->
+  <path d="M 256,10 L 256,50 M 256,462 L 256,502 M 10,256 L 50,256 M 462,256 L 502,256" stroke="#93c5fd" stroke-width="15" />
+</svg>
