@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Starlight-Vanguard-Mainframe 🛸
 
-## Getting Started
+> **ALERT:** ⚠️ Critical system damage sustained. Mainframe offline. Protocol "Light-Side // Dark-Side" instantiated.
 
-First, run the development server:
+Welcome to the **Starlight Vanguard Mainframe**, the central operating system of a damaged Republic cruiser. Following a direct hit during an orbital blockade sprint, critical systems have suffered catastrophic failures—the passenger manifests are locked, life support grids are misaligned, and the reactor core is vulnerable to external slicing.
+
+## The Narrative 📖
+
+You are a technical specialist aboard the Starlight Vanguard. You have a choice: save the ship, or hijack it!
+
+**The Light Side (Easy/Medium):**
+Work to stabilize the ship. You must restore Life Support, fix the corrupted UI glitches on the dashboards, patch navigation relays, and recover the Passenger Manifest so the crew knows who survived.
+
+**The Dark Side (Hard - "The Hack"):**
+Forget the passengers! Work to bypass the Imperial Blockade security protocols, execute a cyber attack on the reactor core state, and orchestrate a complex NoSQL injection to isolate the VIP escape pods, abandoning the crew for personal gain.
+
+---
+
+## 🛠 Hackathon Setup & Getting Started
+
+### 1. Database Connection (Required)
+The mainframe operates entirely on MongoDB. You must have a MongoDB Database ready (such as a free tier MongoDB Atlas cluster) to run this ship.
+
+1. Copy the `.env.example` file and rename it to `.env.local`
+2. Open `.env.local` and replace the `MONGODB_URI` string with your personal MongoDB cluster connection string (Make sure to embed your real username and password).
+
+### 2. Booting the Mainframe
+Install the dependencies, load the broken mainframe data, and start the local environment:
 
 ```bash
+# 1. Install dependencies
+npm install
+
+# 2. Seed the Database with the corrupted ship data and passengers 
+npm run seed
+
+# 3. Start the Next.js Operating System
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+> **Warning:** Immediately after running `npm run seed`, navigating to the Life Support dashboard will trigger a massive 500 server error! This is by design—you must debug the broken components to officially pass the first Light Side trial!
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Hackathon Objective 🎯
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The repository contains exactly 24 interconnected GitHub issues, strictly cataloged by their Light/Dark side difficulty. Look up your assigned issues or check out the project board to see which UI glitch, API failure, or security vulnerability you should tackle next. 
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+May the Force be with you.
